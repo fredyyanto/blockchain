@@ -1,0 +1,81 @@
+.price__container{
+    margin: 0 6em;
+}
+
+.price__container h1{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
+
+.price__detail{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6em;
+    min-height: 125px;
+}
+
+.price__detail-card{
+    flex: 0 1 300px;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.05);
+    margin: 0 1em;
+    padding: 2em;
+}
+
+.price__detail-card p{
+    font-size: 12px;
+}
+
+.price__detail-card span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.price__checking{
+    position: relative;
+}
+
+.price__checking h3{
+    font-weight: lighter;
+}
+
+.price__checking input[type=text]{
+    width: 50%;
+    padding: .5em;
+    font-size: 14px;
+    margin-right: 1em;
+}
+
+.price__checking input[type=text]:focus{
+    outline: none;
+}
+
+.price__checking input[type=text]::-webkit-input-placeholder{
+    font-style: italic;
+    color: #888;
+}
+
+.price__checking p{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.price__checking span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media(max-width: 550px) {
+    .price__container{
+        margin: 0 2em;
+    }
+    .price__detail{
+        flex-wrap: wrap;
+    }
+
+    .price__detail-card{
+        flex: 1;
+        margin-bottom: 2em !important;
+    }
+}
